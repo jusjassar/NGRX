@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { decreament, increament, reset } from '../store/counter.action';
+import { decreament, increament, reset } from '../../shared/store/counter.action';
 
 @Component({
   selector: 'app-counterbutton',
