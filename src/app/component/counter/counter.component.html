@@ -1,0 +1,13 @@
+<div>
+
+    <button (click)="inc()">Increament</button>
+    <button (click)="titleChng()">TitleChange</button><br>
+    <label for="">Custom Counter Value</label><br>
+    <input type="text" [(ngModel)]="customCounterVal" #custCount><br>
+    <select name="" id="" #actionbutton>
+        <option value="add">Add</option>
+        <option value="sub">Sub</option>
+        <option value="reset">Reset</option>
+    </select>
+    <button (click)="custAction(actionbutton.value,customCounterVal)">Custom Counter</button>
+</div>
